@@ -4,7 +4,7 @@ portrait_images
 node_modules
 
 
-
+common
 
 
 #backend 
@@ -40,8 +40,7 @@ backend/lerna-debug.log*
 backend/.DS_Store
 
 
-#common
-common
+
 
 
 
@@ -58,7 +57,7 @@ frontend/Thumbs.db  # Windows
 frontend/.vscode/
 frontend/.idea/
 # Build files
-frontend//dist/
+frontend/dist/
 frontend/build/
 # Dependency directories
 frontend/npm-debug.log*
