@@ -4,7 +4,8 @@ portrait_images
 node_modules
 
 
-common
+common/dist
+common/node_modules
 
 
 #backend 
