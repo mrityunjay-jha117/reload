@@ -1,0 +1,77 @@
+#root level
+portrait_images
+.vscode
+node_modules
+
+
+
+
+
+#backend 
+# prod
+backend/dist/
+# dev
+backend/.yarn/
+backend/!.yarn/releases
+backend/.vscode/*
+backend/!.vscode/launch.json
+backend/!.vscode/*.code-snippets
+backend/.idea/workspace.xml
+backend/.idea/usage.statistics.xml
+backend/.idea/shelf
+
+# deps
+backend/node_modules/
+backend/.wrangler
+# env
+backend/my-app/.env
+backend/.env
+backend/.env.production
+backend/.dev.vars
+# logs
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/pnpm-debug.log*
+backend/lerna-debug.log*
+# misc
+backend/.DS_Store
+
+
+#common
+common
+
+
+
+#frontend
+# Node.js
+frontend/node_modules/
+# Logs
+frontend/logs/
+frontend/*.log
+# OS-specific files
+frontend/.DS_Store  # macOS
+frontend/Thumbs.db  # Windows
+# IDEs and editors
+frontend/.vscode/
+frontend/.idea/
+# Build files
+frontend//dist/
+frontend/build/
+# Dependency directories
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+# Package lock files (optional)
+# package-lock.json (only if you prefer to avoid version control of the lock file)
+# .npmrc
+# Vercel configuration files
+frontend/vercel.json
+# TypeScript build files
+frontend/*.tsbuildinfo

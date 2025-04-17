@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Author {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?  @default("mrityunjay")
+  image     String?  @default("image.com")
+  password  String     
+  about     String?  @default("lorem ipsum dolor")
+  blogs     Blog[]
+
+  // Index on the name field for efficient queries by username
+  @@index([name])
+  @@index([id])
+}
+
+model Location {
+  id       String  @id @default(uuid())
+  city     String
+  country  String
+  blogs    Blog[]  // One-to-many relation with Blog
+
+  // Indexes to efficiently search by geographic attributes
+  @@unique([city, country])
+  @@index([city])
+  @@index([country])
+}
+
+model Blog {
+  id           String    @id @default(uuid())
+  blogHead     String    // A catchy header for the blog post
+  title        String    // Title of the blog post
+  description1 String    // Main description
+  description2 String    // Secondary description
+  images       String[]  // Array of image URLs
+  likes        Int       @default(0)
+  footerImage  String?   
+
+  // Author relation and foreign key
+  author     Author  @relation(fields: [authorId], references: [id])
+  authorId   String
+
+  // Location relation and foreign key
+  location   Location  @relation(fields: [locationId], references: [id])
+  locationId String
+
+  // Index on title for efficient title-based searches
+  @@index([title])
+}

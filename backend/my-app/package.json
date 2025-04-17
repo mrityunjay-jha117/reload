@@ -1,0 +1,30 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@mrityunjay__jha117/reload_common": "^1.0.2",
+    "buffer": "^6.0.3",
+    "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "formidable": "^3.5.2",
+    "hono": "^4.7.6",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.4.0"
+  },
+  "version": "1.0.0",
+  "description": "``` npm install npm run dev ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
