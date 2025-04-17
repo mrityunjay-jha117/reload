@@ -45,33 +45,9 @@ backend/.DS_Store
 
 
 
-#frontend
-# Node.js
-frontend/node_modules/
-# Logs
-frontend/logs/
-frontend/*.log
-# OS-specific files
-frontend/.DS_Store  # macOS
-frontend/Thumbs.db  # Windows
-# IDEs and editors
-frontend/.vscode/
-frontend/.idea/
-# Build files
-frontend/dist/
-frontend/build/
-# Dependency directories
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-# Environment variables
-frontend/.env
-frontend/.env.local
-frontend/.env.*.local
-# Package lock files (optional)
-# package-lock.json (only if you prefer to avoid version control of the lock file)
-# .npmrc
-# Vercel configuration files
+frontend/.vscode
+
+frontend/node_modules
+
+
 frontend/vercel.json
-# TypeScript build files
-frontend/*.tsbuildinfo
